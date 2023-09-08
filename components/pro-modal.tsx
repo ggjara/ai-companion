@@ -43,6 +43,9 @@ export const ProModal = () => {
     }
   }
 
+  if (!isMounted) {
+    return null;
+  }
   return (
     <Dialog open={proModal.isOpen} onOpenChange={proModal.onClose}>
       <DialogContent>
